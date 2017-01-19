@@ -13,7 +13,7 @@ There are two tab-separated columns in this file, where each line contains a **f
 
 ## key_argument_list_by_KR.txt
 
-This file contains 21 event types and list every property of them along with the KR value.
+This file contains 21 event types and list every argument of them ranked by the KR value.
 
 ## event_instance.tsv
 
@@ -64,7 +64,7 @@ m.0zwxc	m.0zxcx	negative	Monroe Elementary School is located at 1240 Boiling Spr
 
 This file is almost the same with the previous one, with the only exception that each positive example in this file contains an additional trigger annotation in the end.
 
-We create a pseudo-property as _trigger_ for each event type, e.g.  _organization.leadership.trigger_, _military.military_service.trigger_ and so on. Each trigger annotation consists of 4 fields, namely trigger property, trigger word, trigger starting and ending position in the sentence. These fields are separated by comma similarly.
+We create a pseudo-property as _trigger_ for each event type, e.g.  _organization.leadership.trigger_, _military.military_service.trigger_ and so on. Each trigger annotation consists of 4 fields, namely event type of this trigger, trigger word, trigger starting and ending position in the sentence. These fields are separated by comma similarly.
 
 The following line is an example. Note the last tab separated field is the trigger annotation talked above.
 
