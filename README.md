@@ -1,5 +1,5 @@
 # event_dataset
-The event dataset arranged for ACL2016.
+The event dataset arranged for ACL2017.
 
 There are 6 files in this dataset. All of them are line based and each line uses a single line feed (LF) in the end.
 
@@ -11,9 +11,9 @@ Since freebase is closed now, we provide this file as a simple dictionary of all
 
 There are two tab-separated columns in this file, where each line contains a **freebase entity id** and **the title on its webpage** originally. 
 
-## event_property_weight.txt
+## key_argument_list_by_KR.txt
 
-This file contains 21 event types and list every property of them along with the frequency.
+This file contains 21 event types and list every property of them along with the KR value.
 
 ## event_instance.tsv
 
@@ -64,12 +64,12 @@ m.0zwxc	m.0zxcx	negative	Monroe Elementary School is located at 1240 Boiling Spr
 
 This file is almost the same with the previous one, with the only exception that each positive example in this file contains an additional trigger annotation in the end.
 
-We create a pseudo-property as _trigger_ for each event type, e.g.  _organization.leadership.trigger_, _military.military_service.trigger_ and so on. Each trigger annotation consists of 4 fields, namely trigger property, trigger text, trigger starting and ending position in the sentence. These fields are separated by comma similarly.
+We create a pseudo-property as _trigger_ for each event type, e.g.  _organization.leadership.trigger_, _military.military_service.trigger_ and so on. Each trigger annotation consists of 4 fields, namely trigger property, trigger word, trigger starting and ending position in the sentence. These fields are separated by comma similarly.
 
 The following line is an example. Note the last tab separated field is the trigger annotation talked above.
 
 ``` text
-m.0102822m	m.0fsj30	m.0105z5z7	Sameer Suneja is an Indian executive who is the current global CEO of confectionery manufacturer Perfetti Van Melle.	organization.leadership.organization,m.0fsj30,97,115	organization.leadership.person,m.0102822m,0,13	negative,m.03rk0,20,26	organization.leadership.trigger,executive,27,36
+m.010rblvl	m.0hnsdkb	m.0115g5hf	She was married to the cinematographer Theo Nischwitz and was sometimes credited as Gertrud Hinz-Nischwitz.	people.marriage.spouse,m.010rblvl,84,106	people.marriage.spouse,m.0hnsdkb,39,53	people.marriage.trigger,married,8,15
 ```
 
 ## triggerList.zip
